@@ -59,6 +59,11 @@ Die API Files werden via Open-Api Generator Plugin in Java-Klassen generiert und
 
 Eine CSV-Datei für Produktdaten wird über Spring Integration importiert. 
 
+## Authentifizierung
+
+Die API verwendet BASIC Auth zur Absicherung der Endpunkte. 
+Die Creds sind konfiguriert in der .env.
+
 ## Hinweise
 
 - Beende die Datenbank mit `docker-compose down`.
