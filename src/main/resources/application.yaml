@@ -1,0 +1,30 @@
+bistro_web_app:
+  order:
+    discount:
+      start: "14:30"
+      end: "19:30"
+      amount: 0.2
+  security:
+    username: ${BISTRO_WEB_APP_USER}
+    password: ${BISTRO_WEB_APP_PW}
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PW}
+    hikari:
+      connection-test-query: SELECT 1
+      maximum-pool-size: 10
+    driver-class-name: org.postgresql.Driver
+    jpa:
+      show-sql: true
+      ddl-auto: validate
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.PostgreSQLDialect
+logging:
+  level:
+    org:
+      springframework: INFO
+      hibernate:
+        SQL: DEBUG
