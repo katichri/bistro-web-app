@@ -3,8 +3,8 @@
 ## Voraussetzungen
 
 - Docker & Docker Compose
-- Java 17+
-- Maven
+- Java 21+
+- Maven 3
 
 ## Datenbank mit Docker Compose starten
 
